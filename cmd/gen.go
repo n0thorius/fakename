@@ -24,7 +24,7 @@ var (
 )
 
 var genCmd = &cobra.Command{
-	Use:   "gen",
+	Use:   "gen [userCode] [countryCode]",
 	Short: "generate fake identity",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) < 2 {
